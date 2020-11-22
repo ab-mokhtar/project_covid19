@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Stat"
+    android:id="@+id/stat">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="@string/symp_desc"
+                    android:textSize="22dp"
+                    android:textAlignment="textStart"
+                    />
+
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="fill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="1">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Fièvre"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="8dip"
+                                android:text="87.9%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Toux sèche"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginVertical="20dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="8dip"
+                                android:text="67.7%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="3dip"
+                                android:text="Fatigue"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="3dip"
+                                android:text="38.1%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="3dip"
+                                android:text="Expectoration"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="3dip"
+                                android:text="33.4%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="3dip"
+                                android:text="Essoufflement"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="3dip"
+                                android:text="18.6%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="3dip"
+                                android:text="Douleurs musculaires "
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="3dip"
+                                android:text="14.8%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Frissons"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="8dip"
+                                android:text="11.4%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"/>
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Nausée ou vomissement"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="6dip"
+                                android:text="5%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Congestion nasale"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="8dip"
+                                android:text="4.8%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Diarhée"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="8dip"
+                                android:text="3.7%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Hémoptysie"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="8dip"
+                                android:text="0.9%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_margin="5dp"
+                                android:padding="8dip"
+                                android:text="Congesion conjonctivale"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/round"
+                                android:gravity="center"
+                                android:padding="8dip"
+                                android:text="0.8%"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+                </androidx.cardview.widget.CardView>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pos2"
+                    android:rowCount="1"
+                    android:columnCount="1"
+                    >
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/cardview_dark_background"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_gravity="fill"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/infect"
+                                android:layout_weight="1"
+                                android:textColor="@color/cardview_light_background"
+                                android:textSize="25dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:text="@string/lire"
+                                android:gravity="center"
+                                android:textColor="@color/cardview_light_background"
+                                android:background="#cb1600"
+                                android:textSize="25dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"><TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "></TextView> </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/menu_navigation"/>
+    </RelativeLayout>
+</LinearLayout>
