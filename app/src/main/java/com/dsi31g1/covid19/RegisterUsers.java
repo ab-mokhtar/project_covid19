@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterUsers extends AppCompatActivity implements View.OnClickListener {
-    private EditText Nom,Age,EmailInpSignUP,PasswordInpSignUP;
+    private EditText Nom, Age, EmailInpSignUP, PasswordInpSignUP;
     private FirebaseAuth mAuth;
 
     @Override
@@ -32,75 +32,67 @@ public class RegisterUsers extends AppCompatActivity implements View.OnClickList
 
         TextView registerButton = (Button) findViewById(R.id.RegisterButton);
         registerButton.setOnClickListener(this);
-        Nom=(EditText) findViewById(R.id.Nom);
-        Age=(EditText) findViewById(R.id.Age);
-        EmailInpSignUP=(EditText) findViewById(R.id.EmailInpSignUP);
-        PasswordInpSignUP=(EditText) findViewById(R.id.PasswordInpSignUP);
+        Nom = (EditText) findViewById(R.id.Nom);
+        Age = (EditText) findViewById(R.id.Age);
+        EmailInpSignUP = (EditText) findViewById(R.id.EmailInpSignUP);
+        PasswordInpSignUP = (EditText) findViewById(R.id.PasswordInpSignUP);
 
     }
 
     @Override
     public void onClick(View v) {
-        int id =v.getId();
+        int id = v.getId();
         if (id == R.id.banner) {
             startActivity(new Intent(this, MainActivity.class));
-        }
-        else if (id == R.id.RegisterButton) {
+        } else if (id == R.id.RegisterButton) {
             RegisterUser();
         }
     }
-    private void RegisterUser(){
-        final String email=EmailInpSignUP.getText().toString().trim();
-        String password=PasswordInpSignUP.getText().toString().trim();
-        final String nom=Nom.getText().toString().trim();
-        final String age=Age.getText().toString().trim();
-        if(nom.isEmpty()){
+
+    private void RegisterUser() {
+        final String email = EmailInpSignUP.getText().toString().trim();
+        String password = PasswordInpSignUP.getText().toString().trim();
+        final String nom = Nom.getText().toString().trim();
+        final String age = Age.getText().toString().trim();
+        if (nom.isEmpty()) {
             Nom.setError("Enter FirstName");
             Nom.requestFocus();
         }
-        if(age.isEmpty()){
+        if (age.isEmpty()) {
             Age.setError("Entez votre age");
             Age.requestFocus();
         }
-        if(email.isEmpty()){
+        if (email.isEmpty()) {
             EmailInpSignUP.setError("Entez votre email");
             EmailInpSignUP.requestFocus();
         }
-        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             EmailInpSignUP.setError("email invalide");
             EmailInpSignUP.requestFocus();
         }
-        if(password.isEmpty()){
+        if (password.isEmpty()) {
             PasswordInpSignUP.setError("entrez password");
             PasswordInpSignUP.requestFocus();
         }
-        if(password.length()<6){
+        if (password.length() < 6) {
             PasswordInpSignUP.setError("la longueur minimale du mot de passe doit être de 6 caractères");
             PasswordInpSignUP.requestFocus();
         }
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    User user = new User(nom, age, email);
-                    FirebaseDatabase.getInstance().getReference("Users")
-                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                            .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            if (task.isSuccessful()) {
-                                startActivity(new Intent(RegisterUsers.this,MainActivity.class));
-                            } else {
-                                Toast.makeText(RegisterUsers.this,
-                                        "creation a échoué! veuillez réessayer", Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    });
-
-                }else{
+                if (task.isSuccessful()) {
+                    if (task.isSuccessful()) {
+                        startActivity(new Intent(RegisterUsers.this, MainActivity.class));
+                    } else {
+                        Toast.makeText(RegisterUsers.this,
+                                "creation a échoué! veuillez réessayer", Toast.LENGTH_LONG).show();
+                    }
+                } else {
                     Toast.makeText(RegisterUsers.this,
                             "creation a échoué", Toast.LENGTH_LONG).show();
                 }
+
             }
         });
     }
