@@ -50,7 +50,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="end"
                             android:id="@+id/nmb_tot"
-                            android:text="1000"
+
                             android:textColor="@color/red"
                             />
                         <ImageView

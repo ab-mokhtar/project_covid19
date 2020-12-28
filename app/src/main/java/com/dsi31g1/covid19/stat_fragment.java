@@ -1,12 +1,19 @@
 package com.dsi31g1.covid19;
 
 import android.os.Bundle;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +66,23 @@ public class stat_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.stat, container, false);
+        final View v = inflater.inflate(R.layout.stat, container, false);
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://covid-50d69-default-rtdb.firebaseio.com/");
+        DatabaseReference myRef = database.getReference();
+        final TextView aw = v.findViewById(R.id.nmb_tot);
+
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String nb=dataSnapshot.child("nb").getValue().toString();
+                aw.setText(nb);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        return v;
     }
 }
