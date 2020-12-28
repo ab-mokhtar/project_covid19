@@ -15,7 +15,7 @@
     <string name="nom_h_pital">Nom_h_pital</string>
     <string name="adrss_h_pital">Adrss_h_pital</string>
     <string name="nombre_de_lit_disponible">Nombre_de_lit_disponible</string>
-    <string name="app_name">Myinterface</string>
+
     <string name="info">Information utile</string>
     <string name="q1">Comment on peut attraper la maladie?</string>
     <string name="a1">1.</string>
@@ -53,4 +53,6 @@
     <string name="c6">6.</string>
     <string name="rep3.6">Les tentatives pour soulager les symptônes comprennent la prise régulière de mèdicaments contre le rhume(en vente libre), la consommation de beaucoup de liquides et le repos.Selon la gravité des symptômes,même une oxygénothérapie, une administration intraveineuse de liquides ou un soutien respiratoie. </string>
     <string name="covid_19">covid_19</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
