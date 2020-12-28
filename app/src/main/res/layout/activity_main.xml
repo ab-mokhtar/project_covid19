@@ -18,10 +18,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-        <fragment
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="com.dsi31g1.covid19.vide"
+            
             android:id="@+id/fragment"/>
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
