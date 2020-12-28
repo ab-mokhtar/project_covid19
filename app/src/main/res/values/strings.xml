@@ -47,12 +47,22 @@
     <string name="c3">3.</string>
     <string name="rep3.3">Les agences de santé publibé des instructions d\'auto isolement qui incluent la notification des fournisseurs de soin de santé par téléphone et la restrictionde toutes les activités en extérieur,sauf pour obtenir du soin médical.  </string>
     <string name="c4">4.</string>
-    <string name="rep3.4">N\'allez pas au travail, à l\'école ou aux lieux publiques.Evitez d\'utiliser</string>
+    <string name="rep3.4">N\'allez pas au travail, à l\'école ou aux lieux publiques.Evitez d\'utiliser le transport publique. le covoiturage, ou les taxis.</string>
     <string name="c5">5.</string>
     <string name="rep3.5">Ceux qui ont récemment voyagé dans un pays où la transmission est rapandue, ou quiont été en contact direct avec une personne diagnostiquée avec COVID-19, ont été invités par les agences gouvernementales de santé à s\'auto-mettre en quarantine ou à pratiquer l\'éloignement social pendant 14 jours,en les comptant du moment de la dérnière exposition possible.</string>
     <string name="c6">6.</string>
     <string name="rep3.6">Les tentatives pour soulager les symptônes comprennent la prise régulière de mèdicaments contre le rhume(en vente libre), la consommation de beaucoup de liquides et le repos.Selon la gravité des symptômes,même une oxygénothérapie, une administration intraveineuse de liquides ou un soutien respiratoie. </string>
-    <string name="covid_19">covid_19</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="covid19">covid</string>
+    <string name="titrelogin">Corona Virus</string>
+    <string name="soustitle">rester à la maison rester en sécurité</string>
+    <string name="emaillogin">Email Address</string>
+    <string name="MPlogin">Mot de passe</string>
+    <string name="register">Registerer</string>
+    <string name="connexion">Connexion</string>
+    <string name="Nom">Nom</string>
+    <string name="Age">Age</string>
+    <string name="MPO">mot de passe oublié</string>
+    <string name="RegisterButton">Registrer</string>
 </resources>
