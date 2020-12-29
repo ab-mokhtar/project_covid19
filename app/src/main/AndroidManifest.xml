@@ -10,7 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Samu"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterUsers"/>
+        <activity android:name=".Samu" />
     </application>
 
 </manifest>

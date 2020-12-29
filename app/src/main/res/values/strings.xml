@@ -73,4 +73,29 @@
 - Déterminer et déclencher la réponse la mieux adaptée à la nature de la situation .
 - Faire intervenir, après accord de l’appelant, un médecin libéral lorsque l’état du patient le nécessite.</string>
     <string name="mainheader">Quelle est la mission des SAMU ?</string>
+    <string name="fievre">Fièvre</string>
+    <string name="_87_9">87,9%</string>
+    <string name="tauxseche">taux séche</string>
+    <string name="_67_7">67,7%</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="_38_1">38,1%</string>
+    <string name="expectoration">Expectoration</string>
+    <string name="_33_4">33,4%</string>
+    <string name="essoufflement">Essoufflement</string>
+    <string name="_18_6">18,6%</string>
+    <string name="doleur_musculaires">Doleur musculaires</string>
+    <string name="_14_8">14,8%</string>
+    <string name="frissons">Frissons</string>
+    <string name="_11_4">11,4%</string>
+    <string name="naus_e_ou_vomissement">Nausée ou vomissement</string>
+    <string name="_5">5%</string>
+    <string name="congestion_nasale">Congestion nasale</string>
+    <string name="_4_8">4,8%</string>
+    <string name="diarh_e">Diarhée</string>
+    <string name="_3_7">3,7%</string>
+    <string name="hemoptysie">Hémoptysie</string>
+    <string name="_0_9">0,9%</string>
+    <string name="congesion_conjonctivale">Congesion conjonctivale</string>
+    <string name="_0_8">0,8%</string>
+    <string name="appelez_samu">Appelez SAMU</string>
 </resources>
