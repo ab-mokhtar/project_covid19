@@ -65,4 +65,12 @@
     <string name="Age">Age</string>
     <string name="MPO">mot de passe oublié</string>
     <string name="RegisterButton">Registrer</string>
+    <string name="header">Qu\'est ce qu\'un SAMU ?</string>
+    <string name="content">Le SAMU ou Service d’Aide Médicale Urgente, est le gérant des urgences médicales préhospitalières. Le public y accède par un numéro gratuit qui est le 190.</string>
+    <string name="maincontent">Les Services d’aide médicale urgente SAMU ont pour mission de répondre par des moyens exclusivement médicaux aux situations d’urgence individuelles ou collectives extrahospitalières. Pour cela, ils ont notamment les attributions suivantes :
+- Assurer une écoute médicale permanente.
+- Réguler les interventions des unités mobiles de secours et de soins dont disposent les services mobiles d’urgence et de réanimation (S.M.U.R) .
+- Déterminer et déclencher la réponse la mieux adaptée à la nature de la situation .
+- Faire intervenir, après accord de l’appelant, un médecin libéral lorsque l’état du patient le nécessite.</string>
+    <string name="mainheader">Quelle est la mission des SAMU ?</string>
 </resources>
