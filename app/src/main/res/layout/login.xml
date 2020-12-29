@@ -73,7 +73,6 @@
             android:layout_width="wrap_content"
             android:text="@string/MPO"
             android:layout_marginStart="60dp"
-            android:layout_marginEnd="60dp"
             android:layout_height="wrap_content">
         </TextView>
 
@@ -81,7 +80,7 @@
             android:id="@+id/registrer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:text="@string/register"
             android:textSize="16sp"
             android:textStyle="bold"/>

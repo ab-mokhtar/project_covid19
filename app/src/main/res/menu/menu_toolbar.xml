@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_people"
+        android:id="@+id/samu"
+        android:title="J'ai besoin d'aide"/>
+
+    <item android:icon="@drawable/ic_peop"
+        android:id="@+id/logout"
+        android:onClick="logout"
+        android:title="Déconnexion"/>
+</menu>
