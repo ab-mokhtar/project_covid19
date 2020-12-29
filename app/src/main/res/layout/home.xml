@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home"
-    android:background="@color/white">
+    android:background="#FEFEFF">
 
     <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
@@ -22,10 +22,8 @@
                 android:gravity="center"
                 android:textColor="#000000"
                 android:text="@string/symp_desc"
-                android:textSize="22dp"
+                android:textSize="22sp"
                  />
-
-
 
             <androidx.cardview.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -34,7 +32,8 @@
                 android:layout_height="wrap_content"
                 card_view:cardCornerRadius="4dp">
 
-                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                <TableLayout
+                    android:backgroundTint="#FEFEFF"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:stretchColumns="1">
@@ -46,19 +45,20 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Fièvre"
+                            android:text="@string/Fièvre"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
+                            android:backgroundTint="#750000"
                             android:background="@drawable/round"
                             android:gravity="center"
                             android:padding="8dip"
-                            android:text="87.9%"
+                            android:text="@string/_87_9"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -75,9 +75,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Toux sèche"
+                            android:text="@string/touxSeche"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -86,9 +86,10 @@
                             android:layout_margin="5dp"
                             android:layout_marginVertical="20dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#A30000"
                             android:gravity="center"
                             android:padding="8dip"
-                            android:text="67.7%"
+                            android:text="@string/_67_7"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -104,9 +105,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="3dip"
-                            android:text="Fatigue"
+                            android:text="@string/fatigue"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -114,9 +115,10 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#D10000"
                             android:gravity="center"
-                            android:padding="3dip"
-                            android:text="38.1%"
+                            android:padding="8dip"
+                            android:text="@string/_38_1"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -131,9 +133,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="3dip"
-                            android:text="Expectoration"
+                            android:text="@string/expectoration"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -141,9 +143,10 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#FF0000"
                             android:gravity="center"
-                            android:padding="3dip"
-                            android:text="33.4%"
+                            android:padding="8dip"
+                            android:text="@string/_33_4"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -158,9 +161,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="3dip"
-                            android:text="Essoufflement"
+                            android:text="@string/essoufflement"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -168,9 +171,10 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#FF2E2E"
                             android:gravity="center"
-                            android:padding="3dip"
-                            android:text="18.6%"
+                            android:padding="8dip"
+                            android:text="@string/_18_6"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -185,9 +189,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="3dip"
-                            android:text="Douleurs musculaires "
+                            android:text="@string/douleurs_musculaires"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -195,9 +199,10 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#FF5C5C"
                             android:gravity="center"
-                            android:padding="3dip"
-                            android:text="14.8%"
+                            android:padding="8dip"
+                            android:text="@string/_14_8"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -212,9 +217,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Frissons"
+                            android:text="@string/frissons"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold"/>
 
                         <TextView
@@ -222,16 +227,17 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#FF7B7B"
                             android:gravity="center"
                             android:padding="8dip"
-                            android:text="11.4%"
+                            android:text="@string/_11_4"
                             android:textColor="#ffffff"
                             android:textStyle="bold"/>
                     </TableRow>
 
                     <View
                         android:layout_height="2dip"
-                        android:background="#FF909090" />
+                        android:background="#FEFEFF" />
 
                     <TableRow>
 
@@ -239,19 +245,20 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Nausée ou vomissement"
+                            android:text="@string/naus_e_ou_vomissement"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
+                            android:backgroundTint="#FF7B7B"
                             android:background="@drawable/round"
                             android:gravity="center"
-                            android:padding="6dip"
-                            android:text="5%"
+                            android:padding="8dip"
+                            android:text="@string/_5"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -265,9 +272,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Congestion nasale"
+                            android:text="@string/congestion_nasale"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -275,9 +282,10 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#F08080"
                             android:gravity="center"
                             android:padding="8dip"
-                            android:text="4.8%"
+                            android:text="@string/_4_8"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -291,19 +299,20 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Diarhée"
+                            android:text="@string/diarh_e"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
+                            android:backgroundTint="#FF8A8A"
                             android:background="@drawable/round"
                             android:gravity="center"
                             android:padding="8dip"
-                            android:text="3.7%"
+                            android:text="@string/_3_7"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -317,19 +326,20 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Hémoptysie"
+                            android:text="@string/h_moptysie"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
+                            android:backgroundTint="#ffbaba"
                             android:background="@drawable/round"
                             android:gravity="center"
                             android:padding="8dip"
-                            android:text="0.9%"
+                            android:text="@string/_0_9"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -343,9 +353,9 @@
                             android:layout_column="1"
                             android:layout_margin="5dp"
                             android:padding="8dip"
-                            android:text="Congesion conjonctivale"
+                            android:text="@string/congesion_conjonctivale"
                             android:textColor="#000000"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -353,9 +363,10 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:background="@drawable/round"
+                            android:backgroundTint="#FFD3D9"
                             android:gravity="center"
                             android:padding="8dip"
-                            android:text="0.8%"
+                            android:text="@string/_0_8"
                             android:textColor="#ffffff"
                             android:textStyle="bold" />
                     </TableRow>
@@ -383,7 +394,7 @@
 
 
 
-                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical" >
@@ -391,9 +402,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/infect"
+                            android:backgroundTint="@color/grey"
                             android:layout_weight="1"
-                            android:textColor="@color/cardview_light_background"
-                            android:textSize="25dp"/>
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
 
                         <TextView
                             android:layout_width="match_parent"
@@ -403,16 +415,11 @@
                             android:gravity="center"
                             android:textColor="@color/cardview_light_background"
                             android:background="#cb1600"
-                            android:textSize="25dp"/>
+                            android:textSize="25sp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"><TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" "></TextView> </androidx.cardview.widget.CardView>
+
         </LinearLayout>
 
 
