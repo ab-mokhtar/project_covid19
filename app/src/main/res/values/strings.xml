@@ -8,8 +8,10 @@
     <string name="d_ced_s_au_total">Décedés au total:</string>
     <string name="nombre_de_maladie_en_tunisie">Nombre de Maladie en Tunisie:</string>
     <string name="nombre_de_maladie_au_total">Nombre de Maladie au total:</string>
-
-    <string name="symp_desc">Les sysmpômes principaux de l\'infection sont la fièvre, la toux,l\'essoufflement et les signes de difficultés respiratoires. Dans les états graves, l\'infection peut causer la pneumonie, les syndrome respiratroire aigu sévère, insuffisance rénale ou même le décès.</string>
+    <string name="symp_desc">Les sysmpômes principaux de l\'infection sont la fièvre,
+        la toux,l\'essoufflement et les signes de difficultés respiratoires.
+        Dans les états graves, l\'infection peut causer la pneumonie,
+        les syndrome respiratroire aigu sévère, insuffisance rénale ou même le décès.</string>
     <string name="infect">Je pense que je suis infecté.\nQue\'est-ce que je devrais faire maintenant?</string>
     <string name="lire">Lire cette information</string>
     <string name="nom_h_pital">Nom_h_pital</string>
@@ -65,4 +67,28 @@
     <string name="Age">Age</string>
     <string name="MPO">mot de passe oublié</string>
     <string name="RegisterButton">Registrer</string>
+    <string name="Fièvre">Fièvre</string>
+    <string name="_87_9">87.9%</string>
+    <string name="touxSeche">Toux sèche</string>
+    <string name="_67_7">67.7%</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="_38_1">38.1%</string>
+    <string name="expectoration">Expectoration</string>
+    <string name="_33_4">33.4%</string>
+    <string name="essoufflement">Essoufflement</string>
+    <string name="_18_6">18.6%</string>
+    <string name="douleurs_musculaires">Douleurs musculaires</string>
+    <string name="_14_8">14.8%</string>
+    <string name="frissons">Frissons</string>
+    <string name="_11_4">11.4%</string>
+    <string name="naus_e_ou_vomissement">Nausée ou vomissement</string>
+    <string name="_5">5%</string>
+    <string name="congestion_nasale">Congestion nasale</string>
+    <string name="_4_8">4.8%</string>
+    <string name="diarh_e">Diarhée</string>
+    <string name="_3_7">3.7%</string>
+    <string name="h_moptysie">Hémoptysie</string>
+    <string name="_0_9">0.9%</string>
+    <string name="congesion_conjonctivale">Congesion conjonctivale</string>
+    <string name="_0_8">0.8%</string>
 </resources>
