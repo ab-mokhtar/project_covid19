@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">projet</string>
-    <string name="coronavirus_2019">Coronavirus 2019</string>
     <string name="patients_gu_ri_en_tunisie">Patients guéri en Tunisie:</string>
     <string name="patients_dans_un_tat_grave">Patients dans un état grave:</string>
     <string name="patients_gu_ri_au_total">Patients guéri au total:</string>
@@ -53,7 +52,6 @@
     <string name="cc6">6.</string>
     <string name="reponse3.6">Les tentatives pour soulager les symptônes comprennent la prise régulière de mèdicaments contre le rhume(en vente libre), la consommation de beaucoup de liquides et le repos.Selon la gravité des symptômes,même une oxygénothérapie, une administration intraveineuse de liquides ou un soutien respiratoie. </string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="covid19">Covid 19</string>
     <string name="titrelogin">Corona Virus</string>
     <string name="soustitle">rester à la maison rester en sécurité</string>
@@ -102,9 +100,7 @@
     <string name="nombre_de_cas_du_jour">nombre_de_cas_du_jour</string>
     <string name="les_h_pitaux">Les Hôpitaux</string>
     <string name="todo">TODO</string>
-    <string name="_1000">1000</string>
-    <string name="_100">100</string>
-    <string name="_11111111">11111111</string>
+    <string name="home">Home</string>
 
 
 </resources>

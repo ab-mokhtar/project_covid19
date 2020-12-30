@@ -14,7 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -385,7 +386,6 @@
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/pos2"
                 android:rowCount="1"
                 android:columnCount="1"
                 >
@@ -454,7 +454,8 @@
             </GridLayout>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp">
+                android:layout_height="100dp"
+                app:cardBackgroundColor="@color/white">
 
                 <TextView
                     android:layout_width="wrap_content"

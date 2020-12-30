@@ -382,8 +382,7 @@ android:orientation="vertical">
 <GridLayout
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:id="@+id/pos2"
-android:rowCount="1"
+    android:rowCount="1"
 android:columnCount="1"
 >
 <androidx.cardview.widget.CardView

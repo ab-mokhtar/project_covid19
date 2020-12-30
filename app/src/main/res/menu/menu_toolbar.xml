@@ -3,7 +3,6 @@
 
 
     <item android:icon="@drawable/ic_peop"
-        android:id="@+id/logout"
         android:onClick="logout"
         android:title="Déconnexion"/>
 </menu>

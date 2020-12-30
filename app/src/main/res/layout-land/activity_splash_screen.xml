@@ -5,11 +5,11 @@
     android:background="#f1f1f1" >
 
     <ImageView
-        android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:src="@drawable/covid19" />
+        android:src="@drawable/covid19"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:textColor="@color/white"
