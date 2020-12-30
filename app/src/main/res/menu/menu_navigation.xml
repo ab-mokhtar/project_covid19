@@ -6,18 +6,18 @@
         android:title="@string/home"/>
     <item android:icon="@drawable/ic_stat"
         android:id="@+id/stat"
-        android:title="Statistique"
+        android:title="@string/statistique"
         />
     <item android:icon="@drawable/ic_hospital"
         android:id="@+id/hospital"
-        android:title="hospital"/>
+        android:title="@string/hospital"/>
 
     <item android:icon="@drawable/ic_about"
         android:id="@+id/about"
-        android:title="About"/>
+        android:title="@string/about"/>
     <item
         android:icon="@drawable/ic_baseline_local_phone_24"
         android:id="@+id/samu"
-        android:title="samu" />
+        android:title="@string/samu" />
 
 </menu>

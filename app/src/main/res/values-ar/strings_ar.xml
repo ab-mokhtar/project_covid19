@@ -100,4 +100,10 @@
     <string name="les_h_pitaux">المستشفيات</string>
     <string name="todo">TODO</string>
     <string name="home">الصفحة الرئيسية</string>
+    <string name="statistique">إحصاء</string>
+    <string name="hospital">مستشفى</string>
+    <string name="about">حول</string>
+    <string name="samu">خدمات المساعدة الطبية العاجلة</string>
+    <string name="d_connexion">تسجيل خروج</string>
+
 </resources>

@@ -4,5 +4,5 @@
 
     <item android:icon="@drawable/ic_peop"
         android:onClick="logout"
-        android:title="Déconnexion"/>
+        android:title="@string/d_connexion"/>
 </menu>

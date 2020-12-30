@@ -101,6 +101,11 @@
     <string name="les_h_pitaux">Les Hôpitaux</string>
     <string name="todo">TODO</string>
     <string name="home">Home</string>
+    <string name="statistique">Statistique</string>
+    <string name="hospital">hospital</string>
+    <string name="about">About</string>
+    <string name="samu">samu</string>
+    <string name="d_connexion">Déconnexion</string>
 
 
 </resources>
