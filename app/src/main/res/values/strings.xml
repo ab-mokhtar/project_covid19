@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">projet</string>
+    <string name="app_name">Covid</string>
     <string name="patients_gu_ri_en_tunisie">Patients guéri en Tunisie:</string>
     <string name="patients_dans_un_tat_grave">Patients dans un état grave:</string>
     <string name="patients_gu_ri_au_total">Patients guéri au total:</string>
