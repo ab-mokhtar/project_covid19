@@ -2,6 +2,7 @@ package com.dsi31g1.covid19;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +11,14 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -67,14 +75,45 @@ public class List_hosp_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View RootView = inflater.inflate(R.layout.fragment_list_hosp_fragment, container, false);
+        final View RootView = inflater.inflate(R.layout.fragment_list_hosp_fragment, container, false);
         final ArrayList<HashMap<String,String>> list= new ArrayList();
-        HashMap<String,String>Log= new HashMap<String,String>();
-        Log.put("Nom","hbib thamer");
-        Log.put("lieu"," rue hbib thamer tunis");
-        Log.put("nblit","50/50");
-        Log.put("phone","71380216");
-        list.add(Log);
+        final HashMap<String,String>Log= new HashMap<String,String>();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://auth-4a095-default-rtdb.firebaseio.com/");
+        DatabaseReference myRef = database.getReference();
+        final TextView test= RootView.findViewById(R.id.test);
+
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                String nom =dataSnapshot.child("hospitales").child("Charles Nicolle").child("nom").getValue().toString();
+                String lieu =dataSnapshot.child("hospitales").child("Charles Nicolle").child("lieu").getValue().toString();
+                String nb_lit =dataSnapshot.child("hospitales").child("Charles Nicolle").child("nb_lit").getValue().toString();
+                String tel =dataSnapshot.child("hospitales").child("Charles Nicolle").child("tel").getValue().toString();
+                Log.put("Nom",nom);
+                Log.put("lieu",lieu);
+                Log.put("phone",tel);
+                Log.put("nblit",nb_lit);
+                list.add(Log);
+
+                 nom =dataSnapshot.child("hospitales").child("Habib_thamer").child("nom").getValue().toString();
+                lieu =dataSnapshot.child("hospitales").child("Habib_thamer").child("lieu").getValue().toString();
+                 nb_lit =dataSnapshot.child("hospitales").child("Habib_thamer").child("nb_lit").getValue().toString();
+                 tel =dataSnapshot.child("hospitales").child("Habib_thamer").child("tel").getValue().toString();
+                Log.put("Nom",nom);
+                Log.put("lieu",lieu);
+                Log.put("phone",tel);
+                Log.put("nblit",nb_lit);
+                list.add(Log);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
         String[]from={"Nom","lieu","nblit"};
         int[] to= { R.id.titreview, R.id.descr,R.id.nb_lit};
         //LogAdapter logAdapter = new LogAdapter (this, Log, LogImg);
@@ -93,7 +132,7 @@ public class List_hosp_fragment extends Fragment {
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle("Sélection Item");
-                builder.setMessage("Hôspital: "+list.get(position).get("Nom")+" Adresse: "+" "+list.get(position).get("lieu")+" nombre de lite occupé: "+list.get(position).get("nblit")+" Tel:"+list.get(position).get("phone"));
+                builder.setMessage("Hôspital: "+list.get(position).get("Nom")+" Adresse: "+" "+list.get(position).get("lieu")+" nombre de lit occupé: "+list.get(position).get("nblit")+" Tel:"+list.get(position).get("phone"));
                 builder.setCancelable(true);
                 builder.setPositiveButton("ok", null).show();
 
