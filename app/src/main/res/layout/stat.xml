@@ -43,7 +43,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/nombre_de_maladie_au_total"
-                            android:textColor="@color/cardview_light_background" />
+                            android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/nombre_de_maladie_en_tunisie"
-                            android:textColor="@color/cardview_light_background" />
+                            android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/d_ced_s_au_total"
-                            android:textColor="@color/cardview_light_background"
+                            android:textColor="@color/black"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/d_ced_s_en_tunisie"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -211,7 +211,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/patients_dans_un_tat_grave"
-                            android:textColor="@color/cardview_light_background" />
+                            android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -256,7 +256,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/patients_dans_un_tat_grave"
-                            android:textColor="@color/cardview_light_background" />
+                            android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -301,7 +301,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/patients_gu_ri_au_total"
-                            android:textColor="@color/cardview_light_background" />
+                            android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -347,7 +347,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/patients_gu_ri_en_tunisie"
-                            android:textColor="@color/cardview_light_background" />
+                            android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -399,45 +399,47 @@
                           <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                              android:padding="20dp">
 
                               <TextView
                                   android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
                                   android:text="@string/nombre_de_cas_du_jour"
-                                  android:textColor="@color/cardview_light_background" />
-
+                                  android:textColor="@color/black" />
                               <TextView
                                   android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
                                   android:textSize="30dp"
-                                  android:id="@+id/nbtest"
+                                  android:id="@+id/nbcas_j"
                                   android:textColor="@color/red"
+                                  android:layout_weight="1"
+                                  android:textAlignment="viewStart" />
 
-                                  />
 
 
                           </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="20dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/nombre_des_test_par_jour"
-                            android:textColor="@color/cardview_light_background"
+                            android:text="@string/nombre_des_test"
+                            android:textColor="@color/black"
                             android:layout_weight="1" />
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="30dp"
-                            android:id="@+id/nbcas_j"
+                            android:id="@+id/nbtest"
                             android:textColor="@color/red"
-                            android:layout_weight="1"
-                            android:textAlignment="viewStart" />
+
+                            />
+
                          </LinearLayout></LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>

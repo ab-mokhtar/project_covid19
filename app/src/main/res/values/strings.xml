@@ -98,4 +98,6 @@
     <string name="congesion_conjonctivale">Congesion conjonctivale</string>
     <string name="_0_8">0,8%</string>
     <string name="appelez_samu">Appelez SAMU</string>
+    <string name="nombre_des_test_par_jour">nombre_des_test_par_jour</string>
+    <string name="nombre_de_cas_du_jour">nombre_de_cas_du_jour</string>
 </resources>
