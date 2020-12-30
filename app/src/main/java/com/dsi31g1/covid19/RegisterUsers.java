@@ -14,7 +14,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterUsers extends AppCompatActivity implements View.OnClickListener {
     private EditText Nom, Age, EmailInpSignUP, PasswordInpSignUP;
@@ -27,15 +26,15 @@ public class RegisterUsers extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.signup);
         mAuth = FirebaseAuth.getInstance();
 
-        TextView banner = (TextView) findViewById(R.id.banner);
+        TextView banner = findViewById(R.id.banner);
         banner.setOnClickListener(this);
 
         TextView registerButton = (Button) findViewById(R.id.RegisterButton);
         registerButton.setOnClickListener(this);
-        Nom = (EditText) findViewById(R.id.Nom);
-        Age = (EditText) findViewById(R.id.Age);
-        EmailInpSignUP = (EditText) findViewById(R.id.EmailInpSignUP);
-        PasswordInpSignUP = (EditText) findViewById(R.id.PasswordInpSignUP);
+        Nom = findViewById(R.id.Nom);
+        Age = findViewById(R.id.Age);
+        EmailInpSignUP = findViewById(R.id.EmailInpSignUP);
+        PasswordInpSignUP = findViewById(R.id.PasswordInpSignUP);
 
     }
 

@@ -57,7 +57,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_peop"></ImageView>
+                            android:src="@drawable/ic_peop" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -95,11 +95,11 @@
                             android:textColor="@color/red"
 
                             />
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/ic_peop"
-                            ></ImageView>
+                            android:src="@drawable/ic_peop" />
 
 
 
@@ -140,10 +140,11 @@
                             android:id="@+id/nbdcd_tot"
                             android:textSize="30dp"
                             />
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/death"></ImageView>
+                            android:src="@drawable/death" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -177,10 +178,11 @@
                             android:id="@+id/nbdcd_tun"
                             android:textSize="30dp"
                             />
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/death"></ImageView>
+                            android:src="@drawable/death" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -218,10 +220,11 @@
                             android:textColor="#fff522"
                             android:id="@+id/etatg_monde"
                             />
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/malade"></ImageView>
+                            android:src="@drawable/malade" />
 
 
                     </LinearLayout>
@@ -262,10 +265,11 @@
                             android:id="@+id/etatg_tun"
                             android:textColor="#fff522"
                             />
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/malade"></ImageView>
+                            android:src="@drawable/malade" />
 
 
                     </LinearLayout>
@@ -307,10 +311,11 @@
                             android:textColor="#0aff1f"
 
                             />
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/ic_gueri"></ImageView>
+                            android:src="@drawable/ic_gueri" />
 
 
                     </LinearLayout>
@@ -351,10 +356,11 @@
                             android:id="@+id/gueri_tun"
                             android:textColor="#0aff1f"
                             />
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
-                            android:src="@drawable/ic_gueri"></ImageView>
+                            android:src="@drawable/ic_gueri" />
 
 
 
@@ -394,12 +400,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/nombre_de_cas_du_jour"
-                            android:textColor="@color/cardview_light_background"
-                           ></TextView>
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/nombre_de_cas_du_jour"
+                                  android:textColor="@color/cardview_light_background" />
+
                               <TextView
                                   android:layout_width="wrap_content"
                                   android:layout_height="wrap_content"
@@ -407,7 +414,7 @@
                                   android:id="@+id/nbtest"
                                   android:textColor="@color/red"
 
-                                  ></TextView>
+                                  />
 
 
                           </LinearLayout>
@@ -415,29 +422,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/nombre_des_test_par_jour"
                             android:textColor="@color/cardview_light_background"
-                            android:layout_weight="1"></TextView>
-                   <TextView
+                            android:layout_weight="1" />
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="30dp"
                             android:id="@+id/nbcas_j"
                             android:textColor="@color/red"
-                       android:layout_weight="1"
-                       android:textAlignment="viewStart"></TextView>
+                            android:layout_weight="1"
+                            android:textAlignment="viewStart" />
                          </LinearLayout></LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"><TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" "></TextView> </androidx.cardview.widget.CardView>
+                android:layout_height="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" " /> </androidx.cardview.widget.CardView>
         </LinearLayout>
 
     </ScrollView>
