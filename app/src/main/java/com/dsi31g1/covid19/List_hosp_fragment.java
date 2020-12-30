@@ -3,6 +3,7 @@ package com.dsi31g1.covid19;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -77,56 +79,15 @@ public class List_hosp_fragment extends Fragment {
                              Bundle savedInstanceState) {
         final View RootView = inflater.inflate(R.layout.fragment_list_hosp_fragment, container, false);
         final ArrayList<HashMap<String,String>> list= new ArrayList();
-        final HashMap<String,String>Log= new HashMap<String,String>();
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://auth-4a095-default-rtdb.firebaseio.com/");
-        DatabaseReference myRef = database.getReference();
+        DatabaseReference myRef = database.getReference("hospitales");
         final TextView test= RootView.findViewById(R.id.test);
-
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                String nom =dataSnapshot.child("hospitales").child("Charles Nicolle").child("nom").getValue().toString();
-                String lieu =dataSnapshot.child("hospitales").child("Charles Nicolle").child("lieu").getValue().toString();
-                String nb_lit =dataSnapshot.child("hospitales").child("Charles Nicolle").child("nb_lit").getValue().toString();
-                String tel =dataSnapshot.child("hospitales").child("Charles Nicolle").child("tel").getValue().toString();
-                Log.put("Nom",nom);
-                Log.put("lieu",lieu);
-                Log.put("phone",tel);
-                Log.put("nblit",nb_lit);
-                list.add(Log);
-
-                 nom =dataSnapshot.child("hospitales").child("Habib_thamer").child("nom").getValue().toString();
-                lieu =dataSnapshot.child("hospitales").child("Habib_thamer").child("lieu").getValue().toString();
-                 nb_lit =dataSnapshot.child("hospitales").child("Habib_thamer").child("nb_lit").getValue().toString();
-                 tel =dataSnapshot.child("hospitales").child("Habib_thamer").child("tel").getValue().toString();
-                Log.put("Nom",nom);
-                Log.put("lieu",lieu);
-                Log.put("phone",tel);
-                Log.put("nblit",nb_lit);
-                list.add(Log);
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
         String[]from={"Nom","lieu","nblit"};
         int[] to= { R.id.titreview, R.id.descr,R.id.nb_lit};
         //LogAdapter logAdapter = new LogAdapter (this, Log, LogImg);
         final ListView list1 = RootView.findViewById(R.id.ListeView1);
-        SimpleAdapter adapter = new SimpleAdapter(getActivity().getBaseContext(),list,R.layout.ligne, from, to);
+        final SimpleAdapter adapter = new SimpleAdapter(getActivity().getBaseContext(),list,R.layout.ligne, from, to);
         list1.setAdapter(adapter);
-        list1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Toast.makeText(getContext(),list.get(position).get("title"),Toast.LENGTH_LONG).show();
-            }
-
-        });
         list1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -140,7 +101,46 @@ public class List_hosp_fragment extends Fragment {
             }
         });
 
-        // Inflate the layout for this fragment
+        myRef.addChildEventListener(new ChildEventListener() {
+                                        @Override
+                                        public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                                            HashMap<String,String>Log= new HashMap<String,String>();
+                                            String nom = snapshot.child("nom").getValue().toString();
+                                            String lieu = snapshot.child("lieu").getValue().toString();
+                                            String nb_lit = snapshot.child("nb_lit").getValue().toString();
+                                            String tel = snapshot.child("tel").getValue().toString();
+                                            Log.put("Nom", nom);
+                                            Log.put("lieu", lieu);
+                                            Log.put("phone", tel);
+                                            Log.put("nblit", nb_lit);
+                                            list.add(Log);
+
+                                            adapter.notifyDataSetChanged();
+                                        }
+
+                                        @Override
+                                        public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                                        }
+
+                                        @Override
+                                        public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+                                        }
+
+                                        @Override
+                                        public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                                        }
+
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError error) {
+
+                                        }
+                                    });
+
+
+                // Inflate the layout for this fragment
         return RootView;
 
 

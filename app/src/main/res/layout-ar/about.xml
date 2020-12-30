@@ -201,7 +201,7 @@
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:textDirection="rtl"
-                        android:text="@string/reponse2.4"
+                        android:text="@string/rep2.4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp" />
