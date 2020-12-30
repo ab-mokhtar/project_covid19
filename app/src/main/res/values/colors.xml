@@ -7,5 +7,5 @@
     <color name="redT">#E91E63</color>
     <color name="white">#FFFAF0</color>
     <color name="grey">#808080</color>
-
+<color name="cardview">#A9A9A9</color>
 </resources>

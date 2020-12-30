@@ -35,19 +35,7 @@ public class ActivityFragment extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_toolbar, menu);
         return true;
     }
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item)
-    {
-        int id = item.getItemId();
-        if(id == R.id.samu)
-        {
-            Intent intent = new Intent(ActivityFragment.this, Samu.class);
-            startActivity(intent);
-            return  true;
-        }
 
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     public void onBackPressed() {
@@ -71,6 +59,9 @@ public class ActivityFragment extends AppCompatActivity {
                         break;
                     case R.id.about:
                         selectedfragment=new about_fragment();
+                        break;
+                    case R.id.samu:
+                        selectedfragment= new samu_fragmen();
                         break;
 
                 }

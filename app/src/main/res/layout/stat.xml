@@ -22,7 +22,7 @@
 
                 >
                 <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_row="0"
@@ -50,14 +50,14 @@
                             android:layout_height="wrap_content"
                             android:gravity="end"
                             android:id="@+id/nmb_tot"
-
+                            android:textSize="30dp"
                             android:textColor="@color/red"
                             />
+
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_peop"
-                            ></ImageView>
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_peop"></ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -69,7 +69,7 @@
                     android:layout_columnWeight="0"
                     android:layout_gravity="fill"
                     android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp">
 
@@ -91,7 +91,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/nbm_tun"
-                            android:text="100"
+                            android:textSize="30dp"
                             android:textColor="@color/red"
 
                             />
@@ -110,7 +110,7 @@
 
 
                 <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_row="1"
@@ -138,7 +138,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="end"
                             android:id="@+id/nbdcd_tot"
-                            android:text="1000"
+                            android:textSize="30dp"
                             />
                         <ImageView
                             android:layout_width="wrap_content"
@@ -147,7 +147,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_row="1"
@@ -168,14 +168,14 @@
                             android:layout_height="wrap_content"
                             android:gravity="left"
                             android:text="@string/d_ced_s_en_tunisie"
-                            android:textColor="@color/cardview_light_background"
+                            android:textColor="@color/white"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="end"
                             android:id="@+id/nbdcd_tun"
-                            android:text="1000"
+                            android:textSize="30dp"
                             />
                         <ImageView
                             android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                     android:layout_columnWeight="0"
                     android:layout_gravity="fill"
                     android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp">
 
@@ -214,7 +214,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="11111111"
+                            android:textSize="30dp"
                             android:textColor="#fff522"
                             android:id="@+id/etatg_monde"
                             />
@@ -236,7 +236,7 @@
                     android:layout_columnWeight="0"
                     android:layout_gravity="fill"
                     android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp">
 
@@ -258,7 +258,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="11111111"
+                            android:textSize="30dp"
                             android:id="@+id/etatg_tun"
                             android:textColor="#fff522"
                             />
@@ -280,7 +280,7 @@
                     android:layout_columnWeight="0"
                     android:layout_gravity="fill"
                     android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp">
 
@@ -302,7 +302,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="11111111"
+                            android:textSize="30dp"
                             android:id="@+id/gueri_monde"
                             android:textColor="#0aff1f"
 
@@ -325,7 +325,7 @@
                     android:layout_columnWeight="0"
                     android:layout_gravity="fill"
                     android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="8dp">
 
@@ -347,7 +347,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="11111111"
+                            android:textSize="30dp"
                             android:id="@+id/gueri_tun"
                             android:textColor="#0aff1f"
                             />
@@ -375,7 +375,7 @@
                 android:columnCount="1"
                 >
                 <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardBackgroundColor="@color/cardview"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_row="0"
@@ -389,29 +389,47 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                          <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nombre de cas du jour:"
-                            android:textColor="@color/cardview_light_background"></TextView>
+                            android:text="@string/nombre_de_cas_du_jour"
+                            android:textColor="@color/cardview_light_background"
+                           ></TextView>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="30dp"
+                                  android:id="@+id/nbtest"
+                                  android:textColor="@color/red"
+
+                                  ></TextView>
+
+
+                          </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="100"
+                            android:text="@string/nombre_des_test_par_jour"
+                            android:textColor="@color/cardview_light_background"
+                            android:layout_weight="1"></TextView>
+                   <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="30dp"
                             android:id="@+id/nbcas_j"
-                            android:textColor="@color/red"></TextView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nombre des test par jour:"
-                            android:textColor="@color/cardview_light_background"></TextView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="100"
-                            android:id="@+id/nbtest"
-                            android:textColor="@color/red"></TextView></LinearLayout>
+                            android:textColor="@color/red"
+                       android:layout_weight="1"
+                       android:textAlignment="viewStart"></TextView>
+                         </LinearLayout></LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
             <androidx.cardview.widget.CardView
