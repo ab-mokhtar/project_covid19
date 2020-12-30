@@ -18,7 +18,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText edittxtEmail, edittxtPwd;
-    private Button signIn;
     private FirebaseAuth mAuth;
 
     @Override
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAuth = FirebaseAuth.getInstance();
         TextView register = findViewById(R.id.registrer);
         register.setOnClickListener(this);
-        signIn = findViewById(R.id.Connexion);
+        Button signIn = findViewById(R.id.Connexion);
         signIn.setOnClickListener(this);
         edittxtEmail = findViewById(R.id.EmailInp);
         edittxtPwd = findViewById(R.id.PasswordInp);
@@ -51,23 +50,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (email.isEmpty()) {
             edittxtEmail.setError("ecrivez votre email");
             edittxtEmail.requestFocus();
+            return;
         }
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             edittxtEmail.setError("email invalide");
             edittxtEmail.requestFocus();
+            return;
         }
         if (password.isEmpty()) {
             edittxtPwd.setError("ecrivez votre mot de passe");
+            return;
         }
         if (password.length() < 6) {
             edittxtPwd.setError("la longueur minimale du mot de passe doit être de 6 caractères");
             edittxtPwd.requestFocus();
+            return;
         }
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
             if (task.isSuccessful()) {
-                    startActivity(new Intent(MainActivity.this, ActivityFragment.class));
+                Toast.makeText(MainActivity.this,"Login successful",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(MainActivity.this, ActivityFragment.class));
 
                 } else {
                     Toast.makeText(MainActivity.this, "échec de la connexion, veuillez vérifier vos informations d'identification et réessayer", Toast.LENGTH_LONG).show();

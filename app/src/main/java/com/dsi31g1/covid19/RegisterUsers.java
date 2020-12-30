@@ -56,26 +56,32 @@ public class RegisterUsers extends AppCompatActivity implements View.OnClickList
         if (nom.isEmpty()) {
             Nom.setError("Enter FirstName");
             Nom.requestFocus();
+            return;
         }
         if (age.isEmpty()) {
             Age.setError("Entez votre age");
             Age.requestFocus();
+            return;
         }
         if (email.isEmpty()) {
             EmailInpSignUP.setError("Entez votre email");
             EmailInpSignUP.requestFocus();
+            return;
         }
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             EmailInpSignUP.setError("email invalide");
             EmailInpSignUP.requestFocus();
+            return;
         }
         if (password.isEmpty()) {
             PasswordInpSignUP.setError("entrez password");
             PasswordInpSignUP.requestFocus();
+            return;
         }
         if (password.length() < 6) {
             PasswordInpSignUP.setError("la longueur minimale du mot de passe doit être de 6 caractères");
             PasswordInpSignUP.requestFocus();
+            return;
         }
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override

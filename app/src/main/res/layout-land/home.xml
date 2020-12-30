@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home"
+    android:background="#FEFEFF">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/symp_desc"
+                android:textSize="22sp"
+                />
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <TableLayout
+                    android:backgroundTint="#FEFEFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="1">
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/fievre"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:backgroundTint="#750000"
+                            android:background="@drawable/round"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_87_9"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/tauxseche"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#A30000"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_67_7"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="3dip"
+                            android:text="@string/fatigue"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#D10000"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_38_1"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="3dip"
+                            android:text="@string/expectoration"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#FF0000"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_33_4"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="3dip"
+                            android:text="@string/essoufflement"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#FF2E2E"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_18_6"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="3dip"
+                            android:text="@string/doleur_musculaires"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#FF5C5C"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_14_8"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/frissons"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#FF7B7B"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_11_4"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FEFEFF" />
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/naus_e_ou_vomissement"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:backgroundTint="#FF7B7B"
+                            android:background="@drawable/round"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_5"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/congestion_nasale"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#F08080"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_4_8"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/diarh_e"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:backgroundTint="#FF8A8A"
+                            android:background="@drawable/round"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_3_7"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <TableRow>
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/hemoptysie"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:backgroundTint="#ffbaba"
+                            android:background="@drawable/round"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_0_9"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+                    <TableRow>
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:padding="8dip"
+                            android:text="@string/congesion_conjonctivale"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="#FFD3D9"
+                            android:gravity="center"
+                            android:padding="8dip"
+                            android:text="@string/_0_8"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pos2"
+                android:rowCount="1"
+                android:columnCount="1"
+                >
+                <androidx.cardview.widget.CardView
+                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/infect"
+                            android:backgroundTint="@color/grey"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:text="@string/lire"
+                            android:gravity="center"
+                            android:textColor="@color/cardview_light_background"
+                            android:background="#cb1600"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
