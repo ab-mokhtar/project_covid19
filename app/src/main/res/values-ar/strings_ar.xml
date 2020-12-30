@@ -44,7 +44,6 @@
     <string name="reponse3.5">لقد حثت الوكالات الصحية الحكومية أولئك الذين سافروا مؤخرًا إلى بلد يكون فيه معدل انتقال العدوى مرتفعًا ، أو الذين كانوا على اتصال مباشر بشخص تم تشخيص إصابته بـ COVID-19 ، على الحجر الصحي أو الممارسة. التباعد الاجتماعي لمدة 14 يومًا ، مع احتسابهم من وقت آخر تعرض ممكن.</string>
     <string name="cc6">6.</string>
     <string name="reponse3.6">تشمل محاولات تخفيف الأعراض تناول أدوية البرد العادية (التي لا تستلزم وصفة طبية) وشرب الكثير من السوائل والراحة. اعتمادًا على شدة الأعراض ، حتى العلاج بالأكسجين أو السوائل الوريدية أو دعم الجهاز التنفسي.</string>
-    <string name="Dcovid_19">فيروس كورونا</string>
     <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
     <string name="covid19">مرض فيروس كورونا</string>
     <string name="titrelogin">فيروس كورونا</string>
@@ -98,4 +97,11 @@
     <string name="congesion_conjonctivale">احتقان الملتحمة</string>
     <string name="_0_8">0,8%</string>
     <string name="appelez_samu">اتصل بـ SAMU</string>
+    <string name="nombre_des_test_par_jour">عدد الاختبارات</string>
+    <string name="nombre_de_cas_du_jour">عدد حالات اليوم</string>
+    <string name="les_h_pitaux">المستشفيات</string>
+    <string name="todo">TODO</string>
+    <string name="_1000">1000</string>
+    <string name="_100">100</string>
+    <string name="_11111111">11111111</string>
 </resources>

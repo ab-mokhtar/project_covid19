@@ -6,6 +6,7 @@
     android:fillViewport="true"
     tools:context=".ActivityFragment">
     <LinearLayout
+        android:layout_margin="8dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -18,7 +19,7 @@
                 android:id="@+id/info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/info"
+                android:text="@string/information"
                 android:textSize="@dimen/info" />
         </RelativeLayout>
         <ImageView
@@ -39,17 +40,17 @@
                     android:textSize="@dimen/q1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1"/>
+                    android:text="@string/question1"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/a1"
+                        android:text="@string/aa1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep1.1"
+                        android:text="@string/reponse1.1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -60,11 +61,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/a2"
+                        android:text="@string/aa2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep1.5"
+                        android:text="@string/reponse1.5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -75,11 +76,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/a3"
+                        android:text="@string/aa3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep1.3"
+                        android:text="@string/reponse1.3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -90,11 +91,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/a4"
+                        android:text="@string/aa4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep1.4"
+                        android:text="@string/reponse1.4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -105,11 +106,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/a5"
+                        android:text="@string/aa5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep1.5"
+                        android:text="@string/reponse1.5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -120,11 +121,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/a6"
+                        android:text="@string/aa6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep1.6"
+                        android:text="@string/reponse1.6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -144,17 +145,17 @@
                     android:textSize="@dimen/q1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2"/>
+                    android:text="@string/question2"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/b1"
+                        android:text="@string/bb1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep2.1"
+                        android:text="@string/reponse2.1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -165,11 +166,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/b2"
+                        android:text="@string/bb2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep2.2"
+                        android:text="@string/reponse2.2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -180,11 +181,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/b3"
+                        android:text="@string/bb3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep2.3"
+                        android:text="@string/reponse2.3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -195,7 +196,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/b4"
+                        android:text="@string/bb4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
@@ -220,17 +221,17 @@
                     android:textSize="@dimen/q1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3"/>
+                    android:text="@string/question3"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/c1"
+                        android:text="@string/cc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep3.1"
+                        android:text="@string/reponse3.1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -240,11 +241,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/c2"
+                        android:text="@string/cc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep3.2"
+                        android:text="@string/reponse3.2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -255,11 +256,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/c3"
+                        android:text="@string/cc3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep3.3"
+                        android:text="@string/reponse3.3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp" />
@@ -269,11 +270,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/c4"
+                        android:text="@string/cc4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep3.4"
+                        android:text="@string/reponse3.4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -283,11 +284,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:text="@string/c5"
+                        android:text="@string/cc5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep3.5"
+                        android:text="@string/reponse3.5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -298,11 +299,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:text="@string/c6"
+                        android:text="@string/cc6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="@string/rep3.6"
+                        android:text="@string/reponse3.6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"

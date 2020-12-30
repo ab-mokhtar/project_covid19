@@ -1,441 +1,466 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".stat_fragment"
+android:background="@color/white">
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:ignore="UselessParent">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<GridLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:rowCount="6"
+android:columnCount="2"
+
+>
+<androidx.cardview.widget.CardView
+app:cardBackgroundColor="@color/cardview"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="0"
+android:layout_column="0"
+android:layout_gravity="fill"
+android:layout_rowWeight="1"
+android:layout_columnWeight="1"
+android:layout_margin="8dp"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
+<LinearLayout android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center"
+android:layout_gravity="top">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/nombre_de_maladie_au_total"
+    android:textColor="@color/black" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:id="@+id/nmb_tot"
+    android:textSize="30sp"
+    android:textColor="@color/red"
+    />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_peop"
+    android:contentDescription="@string/todo" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="0"
+android:layout_rowWeight="0"
+android:layout_column="1"
+android:layout_columnWeight="0"
+android:layout_gravity="fill"
+android:layout_margin="8dp"
+app:cardBackgroundColor="@color/cardview"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="top"
+android:gravity="center"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/nombre_de_maladie_en_tunisie"
+    android:textColor="@color/black" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/nbm_tun"
+    android:textSize="30sp"
+    android:textColor="@color/red"
+
+    />
+
+<ImageView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".stat_fragment"
-    android:background="@color/white">
+    android:src="@drawable/ic_peop"
+    android:contentDescription="@string/todo" />
 
-    <ScrollView
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+<androidx.cardview.widget.CardView
+app:cardBackgroundColor="@color/cardview"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="1"
+android:layout_column="0"
+android:layout_gravity="fill"
+android:layout_rowWeight="1"
+android:layout_columnWeight="1"
+android:layout_margin="8dp"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
+<LinearLayout android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center"
+android:layout_gravity="top">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/d_ced_s_au_total"
+    android:textColor="@color/black" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/nbdcd_tot"
+    android:textSize="30sp"
+    />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:src="@drawable/death"
+    android:contentDescription="@string/todo" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+app:cardBackgroundColor="@color/cardview"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="1"
+android:layout_column="1"
+android:layout_gravity="fill"
+android:layout_rowWeight="1"
+android:layout_columnWeight="1"
+android:layout_margin="8dp"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
+<LinearLayout android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center"
+android:layout_gravity="top">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/d_ced_s_en_tunisie"
+    android:textColor="@color/black"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/nbdcd_tun"
+    android:textSize="30sp"
+    />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:src="@drawable/death"
+    android:contentDescription="@string/todo" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="3"
+android:layout_rowWeight="1"
+android:layout_column="0"
+android:layout_columnWeight="0"
+android:layout_gravity="fill"
+android:layout_margin="8dp"
+app:cardBackgroundColor="@color/cardview"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:rowCount="6"
-                android:columnCount="2"
+            android:gravity="center"
+            android:text="@string/patients_dans_un_tat_grave"
+            android:textColor="@color/black" />
 
-                >
-                <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:layout_gravity="fill"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
-                    <LinearLayout android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_gravity="top">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/nombre_de_maladie_au_total"
-                            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/etatg_monde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff522"
+            android:textSize="30sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="end"
-                            android:id="@+id/nmb_tot"
-
-                            android:textColor="@color/red"
-                            />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_peop"
-                            ></ImageView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="0"
-                    android:layout_rowWeight="0"
-                    android:layout_column="1"
-                    android:layout_columnWeight="0"
-                    android:layout_gravity="fill"
-                    android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/nombre_de_maladie_en_tunisie"
-                            android:textColor="@color/cardview_light_background" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/nbm_tun"
-                            android:text="100"
-                            android:textColor="@color/red"
-
-                            />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_peop">
-
-                        </ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/malade" />
 
 
+    </LinearLayout>
 
-                    </LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="3"
+android:layout_rowWeight="1"
+android:layout_column="1"
+android:layout_columnWeight="0"
+android:layout_gravity="fill"
+android:layout_margin="8dp"
+app:cardBackgroundColor="@color/cardview"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
 
-                </androidx.cardview.widget.CardView>
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
 
+android:layout_gravity="top"
+android:gravity="center"
+android:orientation="vertical">
 
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/patients_dans_un_tat_grave"
+    android:textColor="@color/black" />
 
-                <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    android:layout_gravity="fill"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
-                    <LinearLayout android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_gravity="top">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/d_ced_s_au_total"
-                            android:textColor="@color/cardview_light_background"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="end"
-                            android:id="@+id/nbdcd_tot"
-                            android:text="1000"
-                            />
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="20dp"
-                            android:src="@drawable/death"></ImageView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    android:layout_gravity="fill"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
-                    <LinearLayout android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_gravity="top">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/d_ced_s_en_tunisie"
-                            android:textColor="@color/cardview_light_background"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="end"
-                            android:id="@+id/nbdcd_tun"
-                            android:text="1000"
-                            />
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="20dp"
-                            android:src="@drawable/death"></ImageView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="3"
-                    android:layout_rowWeight="1"
-                    android:layout_column="0"
-                    android:layout_columnWeight="0"
-                    android:layout_gravity="fill"
-                    android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:id="@+id/etatg_tun"
+    android:textColor="#fff522"
+    />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:src="@drawable/malade"
+    android:contentDescription="@string/todo" />
 
-                        android:layout_gravity="top"
-                        android:gravity="center"
-                        android:orientation="vertical">
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="4"
+android:layout_rowWeight="1"
+android:layout_column="0"
+android:layout_columnWeight="0"
+android:layout_gravity="fill"
+android:layout_margin="8dp"
+app:cardBackgroundColor="@color/cardview"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/patients_dans_un_tat_grave"
-                            android:textColor="@color/cardview_light_background" />
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="11111111"
-                            android:textColor="#fff522"
-                            android:id="@+id/etatg_monde"
-                            />
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="20dp"
-                            android:src="@drawable/malade"></ImageView>
+android:layout_gravity="top"
+android:gravity="center"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/patients_gu_ri_au_total"
+    android:textColor="@color/black" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:id="@+id/gueri_monde"
+    android:textColor="#0aff1f"
+
+    />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:src="@drawable/ic_gueri"
+    android:contentDescription="@string/todo" />
 
 
-                    </LinearLayout>
+</LinearLayout>
 
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="3"
-                    android:layout_rowWeight="1"
-                    android:layout_column="1"
-                    android:layout_columnWeight="0"
-                    android:layout_gravity="fill"
-                    android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="4"
+android:layout_rowWeight="1"
+android:layout_column="1"
+android:layout_columnWeight="0"
+android:layout_gravity="fill"
+android:layout_margin="8dp"
+app:cardBackgroundColor="@color/cardview"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
 
-                        android:layout_gravity="top"
-                        android:gravity="center"
-                        android:orientation="vertical">
+android:layout_gravity="top"
+android:gravity="center"
+android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/patients_dans_un_tat_grave"
-                            android:textColor="@color/cardview_light_background" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/patients_gu_ri_en_tunisie"
+    android:textColor="@color/black" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="11111111"
-                            android:id="@+id/etatg_tun"
-                            android:textColor="#fff522"
-                            />
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="20dp"
-                            android:src="@drawable/malade"></ImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:id="@+id/gueri_tun"
+    android:textColor="#0aff1f"
+    />
 
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="4"
-                    android:layout_rowWeight="1"
-                    android:layout_column="0"
-                    android:layout_columnWeight="0"
-                    android:layout_gravity="fill"
-                    android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_gravity="top"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/patients_gu_ri_au_total"
-                            android:textColor="@color/cardview_light_background" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="11111111"
-                            android:id="@+id/gueri_monde"
-                            android:textColor="#0aff1f"
-
-                            />
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ic_gueri"></ImageView>
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="4"
-                    android:layout_rowWeight="1"
-                    android:layout_column="1"
-                    android:layout_columnWeight="0"
-                    android:layout_gravity="fill"
-                    android:layout_margin="8dp"
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_gravity="top"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="@string/patients_gu_ri_en_tunisie"
-                            android:textColor="@color/cardview_light_background" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="11111111"
-                            android:id="@+id/gueri_tun"
-                            android:textColor="#0aff1f"
-                            />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ic_gueri"></ImageView>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:src="@drawable/ic_gueri"
+    android:contentDescription="@string/todo" />
 
 
 
 
-                    </LinearLayout>
+</LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
 
 
 
-            </GridLayout>
+</GridLayout>
 
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/pos2"
-                android:rowCount="1"
-                android:columnCount="1"
-                >
-                <androidx.cardview.widget.CardView
-                    app:cardBackgroundColor="@color/cardview_dark_background"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:layout_gravity="fill"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nombre de cas du jour:"
-                            android:textColor="@color/cardview_light_background">
+<GridLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/pos2"
+android:rowCount="1"
+android:columnCount="1"
+>
+<androidx.cardview.widget.CardView
+app:cardBackgroundColor="@color/cardview"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_row="0"
+android:layout_column="0"
+android:layout_gravity="fill"
+android:layout_rowWeight="1"
+android:layout_columnWeight="1"
+android:layout_margin="8dp"
+app:cardCornerRadius="8dp"
+app:cardElevation="8dp">
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
 
-                        </TextView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="100"
-                            android:id="@+id/nbcas_j"
-                            android:textColor="@color/red">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_de_cas_du_jour"
+        android:textColor="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="30sp"
+        android:id="@+id/nbcas_j"
+        android:textColor="@color/red"
+        android:layout_weight="1"
+        android:textAlignment="viewStart" />
 
-                        </TextView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nombre des test par jour:"
-                            android:textColor="@color/cardview_light_background">
 
-                        </TextView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="100"
-                            android:id="@+id/nbtest"
-                            android:textColor="@color/red">
 
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </GridLayout>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp">
-                <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" ">
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
 
-                </TextView>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/nombre_des_test_par_jour"
+        android:textColor="@color/black"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/nbtest"
+        android:textColor="@color/red"
 
-    </ScrollView>
+        />
+
+</LinearLayout></LinearLayout>
+</androidx.cardview.widget.CardView>
+</GridLayout>
+
+<androidx.cardview.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="100dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text=" " />
+</androidx.cardview.widget.CardView>
+</LinearLayout>
+
+</ScrollView>
 
 </LinearLayout>

@@ -9,10 +9,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <GridLayout
                 android:layout_width="match_parent"
@@ -41,7 +42,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/nombre_de_maladie_au_total"
                             android:textColor="@color/black" />
 
@@ -50,14 +51,15 @@
                             android:layout_height="wrap_content"
                             android:gravity="end"
                             android:id="@+id/nmb_tot"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             android:textColor="@color/red"
                             />
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_peop" />
+                            android:src="@drawable/ic_peop"
+                            android:contentDescription="@string/todo" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -83,7 +85,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/nombre_de_maladie_en_tunisie"
                             android:textColor="@color/black" />
 
@@ -91,7 +93,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/nbm_tun"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             android:textColor="@color/red"
 
                             />
@@ -99,7 +101,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/ic_peop" />
+                            android:src="@drawable/ic_peop"
+                            android:contentDescription="@string/todo" />
 
 
 
@@ -126,25 +129,26 @@
                         android:orientation="vertical"
                         android:gravity="center"
                         android:layout_gravity="top">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/d_ced_s_au_total"
-                            android:textColor="@color/black"
-                            />
+                            android:textColor="@color/black" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="end"
                             android:id="@+id/nbdcd_tot"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/death" />
+                            android:src="@drawable/death"
+                            android:contentDescription="@string/todo" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -167,7 +171,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/d_ced_s_en_tunisie"
                             android:textColor="@color/black"
                             />
@@ -176,13 +180,14 @@
                             android:layout_height="wrap_content"
                             android:gravity="end"
                             android:id="@+id/nbdcd_tun"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/death" />
+                            android:src="@drawable/death"
+                            android:contentDescription="@string/todo" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -209,14 +214,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/patients_dans_un_tat_grave"
                             android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             android:textColor="#fff522"
                             android:id="@+id/etatg_monde"
                             />
@@ -224,7 +229,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/malade" />
+                            android:src="@drawable/malade"
+                            android:contentDescription="@string/todo" />
 
 
                     </LinearLayout>
@@ -254,14 +260,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/patients_dans_un_tat_grave"
                             android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             android:id="@+id/etatg_tun"
                             android:textColor="#fff522"
                             />
@@ -269,7 +275,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/malade" />
+                            android:src="@drawable/malade"
+                            android:contentDescription="@string/todo" />
 
 
                     </LinearLayout>
@@ -299,14 +306,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/patients_gu_ri_au_total"
                             android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             android:id="@+id/gueri_monde"
                             android:textColor="#0aff1f"
 
@@ -315,7 +322,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:src="@drawable/ic_gueri" />
+                            android:src="@drawable/ic_gueri"
+                            android:contentDescription="@string/todo" />
 
 
                     </LinearLayout>
@@ -345,14 +353,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left"
+                            android:gravity="start"
                             android:text="@string/patients_gu_ri_en_tunisie"
                             android:textColor="@color/black" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             android:id="@+id/gueri_tun"
                             android:textColor="#0aff1f"
                             />
@@ -360,7 +368,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
-                            android:src="@drawable/ic_gueri" />
+                            android:src="@drawable/ic_gueri"
+                            android:contentDescription="@string/todo" />
 
 
 
@@ -409,8 +418,8 @@
                                   android:textColor="@color/black" />
                               <TextView
                                   android:layout_width="wrap_content"
-                                  android:layout_height="wrap_content"
-                                  android:textSize="30dp"
+                                  android:layout_height="0dp"
+                                  android:textSize="30sp"
                                   android:id="@+id/nbcas_j"
                                   android:textColor="@color/red"
                                   android:layout_weight="1"
@@ -427,14 +436,14 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/nombre_des_test"
+                            android:layout_height="0dp"
+                            android:text="@string/nombre_des_test_par_jour"
                             android:textColor="@color/black"
                             android:layout_weight="1" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="30dp"
+                            android:textSize="30sp"
                             android:id="@+id/nbtest"
                             android:textColor="@color/red"
 

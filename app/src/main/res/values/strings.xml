@@ -54,7 +54,7 @@
     <string name="reponse3.6">Les tentatives pour soulager les symptônes comprennent la prise régulière de mèdicaments contre le rhume(en vente libre), la consommation de beaucoup de liquides et le repos.Selon la gravité des symptômes,même une oxygénothérapie, une administration intraveineuse de liquides ou un soutien respiratoie. </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="covid19">covid</string>
+    <string name="covid19">Covid 19</string>
     <string name="titrelogin">Corona Virus</string>
     <string name="soustitle">rester à la maison rester en sécurité</string>
     <string name="emaillogin">Email Address</string>
@@ -100,4 +100,11 @@
     <string name="appelez_samu">Appelez SAMU</string>
     <string name="nombre_des_test_par_jour">nombre_des_test_par_jour</string>
     <string name="nombre_de_cas_du_jour">nombre_de_cas_du_jour</string>
+    <string name="les_h_pitaux">Les Hôpitaux</string>
+    <string name="todo">TODO</string>
+    <string name="_1000">1000</string>
+    <string name="_100">100</string>
+    <string name="_11111111">11111111</string>
+
+
 </resources>
