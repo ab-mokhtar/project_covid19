@@ -36,7 +36,7 @@ public class ActivityFragment extends AppCompatActivity {
         return true;
     }
 
-
+//navigation entre les fragment à partir du menu
     @Override
     public void onBackPressed() {
         Toast.makeText(this,"Veuillez déconnecté",Toast.LENGTH_LONG).show();
@@ -71,7 +71,7 @@ public class ActivityFragment extends AppCompatActivity {
             }
 
         };
-
+//méthode permet la déconnexion
     public void logout(MenuItem item)
     {
         mAuth.signOut();
