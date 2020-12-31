@@ -21,6 +21,7 @@ public class RegisterUsers extends AppCompatActivity implements View.OnClickList
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //authentification avec firebase authentification
         mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
@@ -39,6 +40,7 @@ public class RegisterUsers extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
+    //action onclick
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.banner) {
@@ -53,6 +55,7 @@ public class RegisterUsers extends AppCompatActivity implements View.OnClickList
         String password = PasswordInpSignUP.getText().toString().trim();
         final String nom = Nom.getText().toString().trim();
         final String age = Age.getText().toString().trim();
+        //test sur les données
         if (nom.isEmpty()) {
             Nom.setError("Enter FirstName");
             Nom.requestFocus();
@@ -83,6 +86,7 @@ public class RegisterUsers extends AppCompatActivity implements View.OnClickList
             PasswordInpSignUP.requestFocus();
             return;
         }
+        //ceation d'un compte avec firebase methode createUserWithEmailAndPassword
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

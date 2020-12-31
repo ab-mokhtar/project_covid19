@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    //action onclick la redirection vers quel page
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.registrer) {
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void userLogin() {
         String email = edittxtEmail.getText().toString().trim();
         String password = edittxtPwd.getText().toString().trim();
-
+        //verification des champs
         if (email.isEmpty()) {
             edittxtEmail.setError("ecrivez votre email");
             edittxtEmail.requestFocus();
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             edittxtPwd.requestFocus();
             return;
         }
+        //sign in with firebase
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
