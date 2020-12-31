@@ -69,7 +69,7 @@ public class stat_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+//récupération les chiffres statistique à partir d'un api (fichier json)
         // Inflate the layout for this fragment
         final View v = inflater.inflate(R.layout.stat, container, false);
         final TextView t1= v.findViewById(R.id.nbm_tun);

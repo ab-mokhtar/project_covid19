@@ -75,6 +75,7 @@ public class List_hosp_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        /*lecture des données depuis la base de données (firebase) et les mettre dans une liste view */
         final View RootView = inflater.inflate(R.layout.fragment_list_hosp_fragment, container, false);
         final ArrayList<HashMap<String,String>> list= new ArrayList();
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://auth-4a095-default-rtdb.firebaseio.com/");

@@ -61,7 +61,7 @@ public class samu_fragmen extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment et création d'une action lors click de la button elle compose automatiquement numéro d'aide
         View v = inflater.inflate(R.layout.activity_samu, container, false);
         Button btncallsamu = v.findViewById(R.id.call_SAMU);
         btncallsamu.setOnClickListener(new View.OnClickListener() {
